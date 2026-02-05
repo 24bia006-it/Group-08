@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/**
+ * Write a description of class Exercise8_FullMultiplication here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Exercise8_MultiplicationTable
+{
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("=== Multiplication Table Generator ===\n");
+        //Get number from user
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        //Generate multiplication table using for loop
+        System.out.println("\nMultiplication Table for" + number + ":");
+        System.out.println("===============================");
+        for (int i =1; i <= 12; i++) {
+            int result = number * i;
+            System.out.printf("%d x %2d = %3d%n", number, i, result);
+
+        }
+        System.out.println("================================");
+        scanner.close();
+        
+    }
+
+
+}
